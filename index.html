@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>icon font test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <style>
+        .icon_lists {
+            width: 100% !important;
+        }
+        
+        .icon_lists li {
+            float: left;
+            width: 100px;
+            height: 180px;
+            text-align: center;
+            list-style: none !important;
+            font-size: 12px;
+            margin-right: 15px;
+        }
+        
+        .icon_lists .icon {
+            display: block;
+            text-align: center;
+            font-size: 42px;
+            line-height: 100px;
+            margin: 10px 0;
+            color: #333;
+            -webkit-transition: font-size 0.25s ease-out 0s;
+            -moz-transition: font-size 0.25s ease-out 0s;
+            transition: font-size 0.25s ease-out 0s;
+        }
+        
+        .fontclass {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .icon_lists .icon:hover {
+            font-size: 100px;
+        }
+        
+        .markdown {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        .highlight {
+            line-height: 1.5;
+        }
+        
+        .markdown img {
+            vertical-align: middle;
+            max-width: 100%;
+        }
+        
+        .markdown h1 {
+            color: #404040;
+            font-weight: 500;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
+        
+        .name {
+            font-size: 16px;
+        }
+        
+        .clear:after {
+            content: '\20';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        
+        .helps {
+            margin-top: 40px;
+        }
+        
+        .helps .step {
+            padding: 20px;
+            margin: 10px 0;
+            border: solid 1px #e7e1cd;
+            overflow: auto;
+            color: #ccc;
+            background: #2d2d2d;
+        }
+        
+        .iconfont {
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .step code {
+            white-space: pre-wrap;
+            word-break: break-all;
+            position: relative;
+            overflow: hidden;
+            font-size: 16px;
+            font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+        }
+        
+        .step pre {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .step pre::before {
+            content: '01\A 02\A 03\A 04\A 05\A 06\A 07\A 08\A 09\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A 51\A 52\A 53\A 54\A 55\A 56\A 57\A 58\A 59\A 60\A 61\A 62\A 63\A 64\A 65\A 66\A 67\A 68\A 69\A 70\A 71\A 72\A 73\A 74\A 75\A 76\A 77\A 78\A 79\A 80\A 81\A 82\A 83\A 84\A 85\A 86\A 87\A 88\A 89\A 90\A 91\A 92\A 93\A 94\A 95\A 96\A 97\A 98\A 99';
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0;
+            text-align: left;
+            color: #868686;
+            border-right: 1px solid #696363;
+            clip: rect(-100px 2em 9999px 0);
+            /* IE9+ */
+            clip: rect(-100px 3.5ch 9999px 0);
+            overflow: hidden;
+            width: 26px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Secoo Icon Font</h2>
+    <ul class="icon_lists clear">
+
+        <li data-icon="iconarrowright">
+            <i class="icon iconfont icon-iconarrowright"> </i>
+            <div class="fontclass">icon- iconarrowright
+            </div>
+        </li>
+
+        <li data-icon="iconattrntion">
+            <i class="icon iconfont icon-iconattrntion"> </i>
+            <div class="fontclass">icon- iconattrntion
+            </div>
+        </li>
+
+        <li data-icon="iconcheckboxLarge">
+            <i class="icon iconfont icon-iconcheckboxLarge"> </i>
+            <div class="fontclass">icon- iconcheckboxLarge
+            </div>
+        </li>
+
+        <li data-icon="iconclose">
+            <i class="icon iconfont icon-iconclose"> </i>
+            <div class="fontclass">icon- iconclose
+            </div>
+        </li>
+
+        <li data-icon="icondeleteimg">
+            <i class="icon iconfont icon-icondeleteimg"> </i>
+            <div class="fontclass">icon- icondeleteimg
+            </div>
+        </li>
+
+        <li data-icon="iconexpandnormal">
+            <i class="icon iconfont icon-iconexpandnormal"> </i>
+            <div class="fontclass">icon- iconexpandnormal
+            </div>
+        </li>
+
+        <li data-icon="iconexpandselected">
+            <i class="icon iconfont icon-iconexpandselected"> </i>
+            <div class="fontclass">icon- iconexpandselected
+            </div>
+        </li>
+
+        <li data-icon="iconinfor">
+            <i class="icon iconfont icon-iconinfor"> </i>
+            <div class="fontclass">icon- iconinfor
+            </div>
+        </li>
+
+        <li data-icon="iconlike">
+            <i class="icon iconfont icon-iconlike"> </i>
+            <div class="fontclass">icon- iconlike
+            </div>
+        </li>
+
+        <li data-icon="iconloading">
+            <i class="icon iconfont icon-iconloading"> </i>
+            <div class="fontclass">icon- iconloading
+            </div>
+        </li>
+
+        <li data-icon="iconminus">
+            <i class="icon iconfont icon-iconminus"> </i>
+            <div class="fontclass">icon- iconminus
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarback">
+            <i class="icon iconfont icon-iconNavibarback"> </i>
+            <div class="fontclass">icon- iconNavibarback
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarbag">
+            <i class="icon iconfont icon-iconNavibarbag"> </i>
+            <div class="fontclass">icon- iconNavibarbag
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarcameraself">
+            <i class="icon iconfont icon-iconNavibarcameraself"> </i>
+            <div class="fontclass">icon- iconNavibarcameraself
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarcamera">
+            <i class="icon iconfont icon-iconNavibarcamera"> </i>
+            <div class="fontclass">icon- iconNavibarcamera
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarcloselarge">
+            <i class="icon iconfont icon-iconNavibarcloselarge"> </i>
+            <div class="fontclass">icon- iconNavibarcloselarge
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarcollectnormal">
+            <i class="icon iconfont icon-iconNavibarcollectnormal"> </i>
+            <div class="fontclass">icon- iconNavibarcollectnormal
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarcollectselected">
+            <i class="icon iconfont icon-iconNavibarcollectselected"> </i>
+            <div class="fontclass">icon- iconNavibarcollectselected
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarcollectbrandnormal">
+            <i class="icon iconfont icon-iconNavibarcollectbrandnormal"> </i>
+            <div class="fontclass">icon- iconNavibarcollectbrandnormal
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarhistory">
+            <i class="icon iconfont icon-iconNavibarhistory"> </i>
+            <div class="fontclass">icon- iconNavibarhistory
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarimg">
+            <i class="icon iconfont icon-iconNavibarimg"> </i>
+            <div class="fontclass">icon- iconNavibarimg
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarnetworkanomaly">
+            <i class="icon iconfont icon-iconNavibarnetworkanomaly"> </i>
+            <div class="fontclass">icon- iconNavibarnetworkanomaly
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarnotice">
+            <i class="icon iconfont icon-iconNavibarnotice"> </i>
+            <div class="fontclass">icon- iconNavibarnotice
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarpluslarge">
+            <i class="icon iconfont icon-iconNavibarpluslarge"> </i>
+            <div class="fontclass">icon- iconNavibarpluslarge
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarsearch">
+            <i class="icon iconfont icon-iconNavibarsearch"> </i>
+            <div class="fontclass">icon- iconNavibarsearch
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarservice">
+            <i class="icon iconfont icon-iconNavibarservice"> </i>
+            <div class="fontclass">icon- iconNavibarservice
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarset">
+            <i class="icon iconfont icon-iconNavibarset"> </i>
+            <div class="fontclass">icon- iconNavibarset
+            </div>
+        </li>
+
+        <li data-icon="iconNavibarshare">
+            <i class="icon iconfont icon-iconNavibarshare"> </i>
+            <div class="fontclass">icon- iconNavibarshare
+            </div>
+        </li>
+
+        <li data-icon="iconNavibartrash">
+            <i class="icon iconfont icon-iconNavibartrash"> </i>
+            <div class="fontclass">icon- iconNavibartrash
+            </div>
+        </li>
+
+        <li data-icon="iconopendown">
+            <i class="icon iconfont icon-iconopendown"> </i>
+            <div class="fontclass">icon- iconopendown
+            </div>
+        </li>
+
+        <li data-icon="iconopenup">
+            <i class="icon iconfont icon-iconopenup"> </i>
+            <div class="fontclass">icon- iconopenup
+            </div>
+        </li>
+
+        <li data-icon="iconplus">
+            <i class="icon iconfont icon-iconplus"> </i>
+            <div class="fontclass">icon- iconplus
+            </div>
+        </li>
+
+        <li data-icon="iconselectdisableLarge">
+            <i class="icon iconfont icon-iconselectdisableLarge"> </i>
+            <div class="fontclass">icon- iconselectdisableLarge
+            </div>
+        </li>
+
+        <li data-icon="iconselectdisableSmall">
+            <i class="icon iconfont icon-iconselectdisableSmall"> </i>
+            <div class="fontclass">icon- iconselectdisableSmall
+            </div>
+        </li>
+
+        <li data-icon="iconselectedLarge">
+            <i class="icon iconfont icon-iconselectedLarge"> </i>
+            <div class="fontclass">icon- iconselectedLarge
+            </div>
+        </li>
+
+        <li data-icon="iconselectedSmall">
+            <i class="icon iconfont icon-iconselectedSmall"> </i>
+            <div class="fontclass">icon- iconselectedSmall
+            </div>
+        </li>
+
+        <li data-icon="iconstarnormal">
+            <i class="icon iconfont icon-iconstarnormal"> </i>
+            <div class="fontclass">icon- iconstarnormal
+            </div>
+        </li>
+
+        <li data-icon="iconstarselected">
+            <i class="icon iconfont icon-iconstarselected"> </i>
+            <div class="fontclass">icon- iconstarselected
+            </div>
+        </li>
+
+        <li data-icon="iconstep">
+            <i class="icon iconfont icon-iconstep"> </i>
+            <div class="fontclass">icon- iconstep
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarbagnormal">
+            <i class="icon iconfont icon-iconTabBarbagnormal"> </i>
+            <div class="fontclass">icon- iconTabBarbagnormal
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarbrandnormal">
+            <i class="icon iconfont icon-iconTabBarbrandnormal"> </i>
+            <div class="fontclass">icon- iconTabBarbrandnormal
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarbrandselected">
+            <i class="icon iconfont icon-iconTabBarbrandselected"> </i>
+            <div class="fontclass">icon- iconTabBarbrandselected
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarcategorynormal">
+            <i class="icon iconfont icon-iconTabBarcategorynormal"> </i>
+            <div class="fontclass">icon- iconTabBarcategorynormal
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarcategoryselected">
+            <i class="icon iconfont icon-iconTabBarcategoryselected"> </i>
+            <div class="fontclass">icon- iconTabBarcategoryselected
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarfavornormal">
+            <i class="icon iconfont icon-iconTabBarfavornormal"> </i>
+            <div class="fontclass">icon- iconTabBarfavornormal
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarhomenormal">
+            <i class="icon iconfont icon-iconTabBarhomenormal"> </i>
+            <div class="fontclass">icon- iconTabBarhomenormal
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarhomeselected">
+            <i class="icon iconfont icon-iconTabBarhomeselected"> </i>
+            <div class="fontclass">icon- iconTabBarhomeselected
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarselectedbag">
+            <i class="icon iconfont icon-iconTabBarselectedbag"> </i>
+            <div class="fontclass">icon- iconTabBarselectedbag
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarselecteduser">
+            <i class="icon iconfont icon-iconTabBarselecteduser"> </i>
+            <div class="fontclass">icon- iconTabBarselecteduser
+            </div>
+        </li>
+
+        <li data-icon="iconTabBartopnormal">
+            <i class="icon iconfont icon-iconTabBartopnormal"> </i>
+            <div class="fontclass">icon- iconTabBartopnormal
+            </div>
+        </li>
+
+        <li data-icon="iconTabBarusernormal">
+            <i class="icon iconfont icon-iconTabBarusernormal"> </i>
+            <div class="fontclass">icon- iconTabBarusernormal
+            </div>
+        </li>
+
+        <li data-icon="icontrash">
+            <i class="icon iconfont icon-icontrash"> </i>
+            <div class="fontclass">icon- icontrash
+            </div>
+        </li>
+
+        <li data-icon="iconundo">
+            <i class="icon iconfont icon-iconundo"> </i>
+            <div class="fontclass">icon- iconundo
+            </div>
+        </li>
+
+        <li data-icon="iconunselectedLarge">
+            <i class="icon iconfont icon-iconunselectedLarge"> </i>
+            <div class="fontclass">icon- iconunselectedLarge
+            </div>
+        </li>
+
+        <li data-icon="iconunselectedSmall">
+            <i class="icon iconfont icon-iconunselectedSmall"> </i>
+            <div class="fontclass">icon- iconunselectedSmall
+            </div>
+        </li>
+
+        <li data-icon="iconvisibledisabled">
+            <i class="icon iconfont icon-iconvisibledisabled"> </i>
+            <div class="fontclass">icon- iconvisibledisabled
+            </div>
+        </li>
+
+        <li data-icon="iconvisiblenormal">
+            <i class="icon iconfont icon-iconvisiblenormal"> </i>
+            <div class="fontclass">icon- iconvisiblenormal
+            </div>
+        </li>
+
+    </ul>
+    <div style="clear: both;">
+        <h2>Use Secoo Icon Font</h2>
+    </div>
+    <div class="helps">
+        第一步：将相应的html标签插入页面html
+        <div class="step" id="step1">
+        </div>
+        第二步：使用font-face声明字体
+        <div class="step" id="step2">
+        </div>
+        第三步：定义使用iconfont的样式
+        <div class="step" id="step3">
+        </div>
+        第四步：挑选相应图标并获取字体编码，应用于页面
+        <div class="step" id="step4">
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            hljs.initHighlightingOnLoad();
+            marked.setOptions({
+                renderer: new marked.Renderer(),
+                gfm: true,
+                tables: true,
+                breaks: false,
+                pedantic: false,
+                sanitize: true,
+                smartLists: true,
+                smartypants: false,
+                highlight: function(code) {
+                    return hljs.highlightAuto(code).value;
+                }
+            });
+            var currLiClass = $('.icon_lists li').eq(0)[0].dataset.icon;
+            var markdownString1 = '```html\n<i class="icon iconfont icon-' + currLiClass + '"></i>\n```';
+            var markdownString2 = '```css\n@font-face{\n\tfont-family: "merge";\n\tsrc: url("../fonts/merge.eot");\n\tsrc: url("../fonts/merge.eot?#iefix") format("eot"),\n\turl("../fonts/merge.woff") format("woff"),\n\turl("../fonts/merge.ttf") format("truetype");\n}\n```';
+            var markdownString3 = '```css\n.icon-' + currLiClass + '{\n\tfont-family:"iconfont"!important;\n\tfont-size:16px;\n\tfont-style:normal;\n\tcolor: #333;\n}\n```';
+            var markdownString4 = '```css\n.icon-' + currLiClass + ':before {\n\tcontent: "\E01F";\n}\n```';
+            document.getElementById('step1').innerHTML = marked(markdownString1);
+            document.getElementById('step2').innerHTML = marked(markdownString2);
+            document.getElementById('step3').innerHTML = marked(markdownString3);
+            document.getElementById('step4').innerHTML = marked(markdownString4);
+            $('.icon_lists').on("click", "li", function(e) {
+                var currLiClass = $(this)[0].dataset.icon;
+                var markdownString1 = '```html\n<i class="icon iconfont icon-' + currLiClass + '"></i>\n```';
+                var markdownString2 = '```css\n@font-face{\n\tfont-family: "merge";\n\tsrc: url("../fonts/merge.eot");\n\tsrc: url("../fonts/merge.eot?#iefix") format("eot"),\n\turl("../fonts/merge.woff") format("woff"),\n\turl("../fonts/merge.ttf") format("truetype");\n}\n```';
+                var markdownString3 = '```css\n.icon-' + currLiClass + '{\n\tfont-family:"iconfont"!important;\n\tfont-size:16px;\n\tfont-style:normal;\n\tcolor: #333;\n}\n```';
+                var markdownString4 = '```css\n.icon-' + currLiClass + ':before {\n\tcontent: "\E01F";\n}\n```';
+                document.getElementById('step1').innerHTML = marked(markdownString1);
+                document.getElementById('step2').innerHTML = marked(markdownString2);
+                document.getElementById('step3').innerHTML = marked(markdownString3);
+                document.getElementById('step4').innerHTML = marked(markdownString4);
+            });
+        });
+    </script>
+</body>
+
+</html>

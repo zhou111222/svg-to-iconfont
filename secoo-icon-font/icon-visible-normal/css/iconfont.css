@@ -1,0 +1,16 @@
+@font-face {
+	font-family: "iconvisiblenormal";
+	src: url('../fonts/iconvisiblenormal.eot');
+	src: url('../fonts/iconvisiblenormal.eot?#iefix') format('eot'),
+		url('../fonts/iconvisiblenormal.woff') format('woff'),
+		url('../fonts/iconvisiblenormal.ttf') format('truetype');
+}
+
+  .icon-iconvisiblenormal {
+    font-family: "iconvisiblenormal" !important;
+}
+
+
+.icon-iconvisiblenormal:before {
+	content: "\E001";
+}
